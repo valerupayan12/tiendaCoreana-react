@@ -1,16 +1,18 @@
+import TarjetaProducto from './TarjetaProducto'; // 👈 Asegúrate de que esta línea exista arriba de todo
 
 function GaleriaProductos({productos}) {
   return (
     <div className="galeria">
-					{productos.map(producto => (
+        {productos.map(producto => (
             <TarjetaProducto 
-            id={producto.id}
-            nombre={producto.nombre}
-            imagen={producto.imagen}
-            precio={producto.precio}
+                key={producto.id} // <-- Añade esta línea aquí
+                id={producto.id}
+                nombre={producto.nombre}
+                imagen={producto.imagen}
+                precio={producto.precio}
             />
-          ))}
-		</div>
+        ))}
+    </div>
   );
 }
 export default GaleriaProductos;
