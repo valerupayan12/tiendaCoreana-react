@@ -1,15 +1,13 @@
 
-function TarjetaProducto({id,nombre,imagen,precio}){
+function TarjetaProducto({nombre,imagen,precio}){
     return(
-        <article class="tarjeta">
+        <article className="tarjeta">
 						<div className="espacio-imagen">
-							<img src="img/TOCOBO04.jpg" />
-                             style="height: 100%; width: 200%; object-fit: cover;">
+							<img src={imagen} />
 						</div>
 						<h3>{nombre}</h3>
-                        <p>{precio}</p>
-						
-						
+                        <p className="precio">${precio}</p>
+					
 		</article>
     );
 }

@@ -11,11 +11,14 @@ import portadaCoreana from './assets/img/coreana.jpg'
 import logoSkinInternational from './assets/img/logoskininternational.png'
 import tratamientoVitaminaC from './assets/img/15552_krskin_vc.jpg'
 import Seccion from './Seccion'
+import
 
 function App() {
   //debe editarse 
   const itemMenu=[
-    {href:'#inicio',label:''}
+    {href:'#inicio',label:'Inicio'},
+    {href:'#album',label:'Productos'}
+    
   ]
   const productos = [
     {
@@ -28,46 +31,55 @@ function App() {
       id: 2,
       nombre: 'Rosy Mucha',
       imagen: rosyMucha,
+      precio: '7000'
     },
     {
       id: 3,
       nombre: 'Protector solar',
       imagen: protectorSolar,
+      precio: '10000'
     },
     {
       id: 4,
       nombre: 'Sakura',
       imagen: sakura,
+      precio: '8000'
     },
     {
       id: 5,
       nombre: 'TOCOBO',
       imagen: tocobo,
+      precio: '12000'
     },
     {
       id: 6,
       nombre: 'Maquillaje y skincare',
       imagen: cosmeticosCoreanos,
+      precio: '15000'
     },
     {
       id: 7,
       nombre: 'Lip tattoo',
       imagen: lipTatto,
+      precio: '20000'
     },
     {
       id: 8,
       nombre: 'Productos coreanos',
       imagen: portadaCoreana,
+      precio: '25000'
     },
     {
       id: 9,
       nombre: 'K-Skin International',
       imagen: logoSkinInternational,
+      precio: '30000'
     },
     {
       id: 10,
       nombre: 'Tratamiento vitamina C',
       imagen: tratamientoVitaminaC,
+      precio: '35000'
     },
   ]
 
@@ -91,9 +103,13 @@ function App() {
           <p>Los mejores productos de corea estan aqui.</p>
 				  <p>Puedes encontrar todo lo que necesites!.</p>
         </Seccion>
+        <Seccion id="album" titulo="Nuestros Productos">
+          <GaleriaProductos productos={productos} />
+        </Seccion>
 
       </main>
-      //COMPONENETE PARA
+      //COMPONENTE PARA
+
        
 
       <footer id="pie">
