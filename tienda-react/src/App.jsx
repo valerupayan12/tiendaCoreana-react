@@ -13,11 +13,16 @@ import tratamientoVitaminaC from './assets/img/15552_krskin_vc.jpg'
 import Seccion from './Seccion'
 
 function App() {
+  //debe editarse 
+  const itemMenu=[
+    {href:'#inicio',label:''}
+  ]
   const productos = [
     {
       id: 1,
       nombre: 'Base de maquillaje 2aN',
       imagen: imagenBase,
+      precio: '5000'
     },
     {
       id: 2,
@@ -88,7 +93,7 @@ function App() {
         </Seccion>
 
       </main>
-
+      //COMPONENETE PARA
        
 
       <footer id="pie">
