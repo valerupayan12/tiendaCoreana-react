@@ -4,8 +4,10 @@ function GaleriaProductos({productos}) {
     <div className="galeria">
 					{productos.map(producto => (
             <TarjetaProducto 
-              key={producto.id}
-              producto={producto}
+            id={producto.id}
+            nombre={producto.nombre}
+            imagen={producto.imagen}
+            precio={producto.precio}
             />
           ))}
 		</div>
