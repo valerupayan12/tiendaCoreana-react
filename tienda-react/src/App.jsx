@@ -10,6 +10,7 @@ import lipTatto from './assets/img/liptatto.jpg'
 import portadaCoreana from './assets/img/coreana.jpg'
 import logoSkinInternational from './assets/img/logoskininternational.png'
 import tratamientoVitaminaC from './assets/img/15552_krskin_vc.jpg'
+import Seccion from './Seccion'
 
 function App() {
   const productos = [
@@ -79,27 +80,16 @@ function App() {
           </ul>
         </nav>
       </header>
+      
+      <main id="contenido"> //Se le modifico todo elconteido llamnado a las propiedades de SECCION 
+        <Seccion id="inicio" titulo="Bienedio a K-Skin">
+          <p>Los mejores productos de corea estan aqui.</p>
+				  <p>Puedes encontrar todo lo que necesites!.</p>
+        </Seccion>
 
-      <main id="contenido">
-        <section id="inicio" className="seccion">
-          <h2>Bienvenidos a K-Skin</h2>
-          <p>Los mejores productos de Corea estan aqui.</p>
-          <p>Puedes encontrar todo lo que necesites.</p>
-        </section>
-
-        <section id="album" className="seccion">
-          <h2>Revisa nuestros productos</h2>
-          <img src={portadaCoreana} alt="Productos de skincare coreano" />
-          <div className="galeria">
-            {productos.map((producto) => (
-              <article key={producto.id}>
-                <img src={producto.imagen} alt={producto.nombre} />
-                <h3>{producto.nombre}</h3>
-              </article>
-            ))}
-          </div>
-        </section>
       </main>
+
+       
 
       <footer id="pie">
         <p><small>&copy; 2026 K-Skin - Todos los derechos reservados</small></p>
