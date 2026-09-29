@@ -1,16 +1,12 @@
 import GaleriaProductos from './components/GaleriaProductos'; // O la ruta correcta donde guardaste ese componente
 
 import './App.css'
-import imagenBase from './assets/img/2aN_BASE.jpg'
-import rosyMucha from './assets/img/2-rosy-mucha.jpg'
-import protectorSolar from './assets/img/protectorSolas.jpeg'
-import sakura from './assets/img/sakura.jpeg'
-import tocobo from './assets/img/TOCOBO04.jpg'
-import cosmeticosCoreanos from './assets/img/maquillajeskincare.jpg'
-import lipTatto from './assets/img/liptatto.jpg'
-import portadaCoreana from './assets/img/coreana.jpg'
-import logoSkinInternational from './assets/img/logoskininternational.png'
-import tratamientoVitaminaC from './assets/img/15552_krskin_vc.jpg'
+const imagenBase = '/img/2aN_BASE.jpg'
+const rosyMucha = '/img/2-rosy-mucha.jpg'
+const protectorSolar = '/img/protectorSolas.jpeg'
+const sakura = '/img/sakura.jpeg'
+const tocobo = '/img/TOCOBO04.jpg'
+const lipTatto = '/img/liptatto.jpg'
 import Seccion from './Seccion'
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -58,11 +54,10 @@ import Body from './components/Body';
       
       />
       <main id="contenido">  
-        <Seccion id="inicio" class="seccion">
-				<h2>Bienvenidos a K-Skin</h2>
-				<p>Los mejores productos de corea estan aqui.</p>
-				<p>Puedes encontrar todo lo que necesites!.</p>
-			</Seccion>
+      <Seccion id="inicio" titulo="Bienvenidos a K-Skin">
+      <p>Los mejores productos de corea estan aqui.</p>
+      <p>Puedes encontrar todo lo que necesites!.</p>
+      </Seccion>
       <Seccion id="album" titulo="Nuestros Productos Estrella">
 				<GaleriaProductos productos={productos}/>
 			</Seccion>
@@ -75,4 +70,4 @@ import Body from './components/Body';
   )
 }
 
-export default App.jsx
+export default App
