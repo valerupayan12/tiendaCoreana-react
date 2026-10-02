@@ -10,7 +10,6 @@ const lipTatto = '/img/liptatto.jpg'
 import Seccion from './Seccion'
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Body from './components/Body';
 
 
   function App() {
@@ -44,15 +43,6 @@ import Body from './components/Body';
       descripcion="Lo mejor de la estetica Coreana en tu piel" 
       itemsMenu={itemsMenu} />
        
-      
-      <Body
-      cuerpo="Bienvenidos a K-Skin, tu destino para productos de belleza coreanos de alta calidad. Descubre nuestra selección de maquillaje, cuidado de la piel y más, cuidadosamente elegidos para resaltar tu belleza natural. Explora nuestras categorías y encuentra los productos perfectos para ti."   
-      cuerpo1="En K-Skin, nos apasiona ofrecerte lo mejor de la estética coreana. Desde bases de maquillaje innovadoras hasta tratamientos de cuidado de la piel efectivos, cada producto ha sido seleccionado para brindarte resultados excepcionales. Nuestra misión es ayudarte a lucir y sentirte increíble, con productos que combinan calidad, innovación y estilo."
-      cuerpo2="Explora nuestra galería de productos estrella y descubre lo último en tendencias de belleza coreana. Desde protectores solares ligeros hasta tintes labiales de larga duración, tenemos todo lo que necesitas para cuidar tu piel y realzar tu belleza natural. ¡Bienvenido a K-Skin, donde la belleza coreana cobra vida!" 
-      
-      
-      
-      />
       <main id="contenido">  
       <Seccion id="inicio" titulo="Bienvenidos a K-Skin">
       <p>Los mejores productos de corea estan aqui.</p>
