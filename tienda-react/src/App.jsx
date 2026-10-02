@@ -13,6 +13,7 @@ import Header from './components/Header'; //IMPORTAMOS EL COMPONENTE HEADER PARA
 import Form from 'react-bootstrap/Form'; //IMPORTAMOS EL COMPONENTE FORM DE REACT-BOOTSTRAP PARA USARLO EN EL APP
 import Button from 'react-bootstrap/Button'; //IMPORTAMOS EL COMPONENTE BUTTON DE REACT-BOOTSTRAP PARA USARLO EN EL APP
 import 'bootstrap/dist/css/bootstrap.min.css'; //IMPORTAMOS EL CSS DE BOOTSTRAP PARA USARLO EN EL APP
+import Contacto from './components/Contacto';
 
   function App() {
   //LISTA DE ITEMS DEL MENU
@@ -42,7 +43,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; //IMPORTAMOS EL CSS DE BOOTSTRAP 
       titulo="K-Skin" 
       descripcion="Lo mejor de la estetica Coreana en tu piel" 
       itemsMenu={itemsMenu} />
-¿      <main id="contenido">  
+      <main id="contenido">  
       <Seccion id="inicio" titulo="Bienvenidos a K-Skin">
       <p>Los mejores productos de corea estan aqui.</p>
       <p>Puedes encontrar todo lo que necesites!.</p>
@@ -50,26 +51,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'; //IMPORTAMOS EL CSS DE BOOTSTRAP 
       <Seccion id="album" titulo="Nuestros Productos Estrella">
 				<GaleriaProductos productos={productos}/>
 			</Seccion>
-      <Seccion id="contacto" titulo="Contacto" className="seccion">
-        <p>Si tienes dudas o comentarios, puedes escribirnos:</p>
-        <Form>
-          
-          <Form.Group className='mb-3' controlId='formNombre'>
-              <Form.Label>Nombre</Form.Label>
-              <Form.Control type="text" placeholder="Ingresa su nombre" />
-          </Form.Group>
-
-          <Form.Group className='mb-3' controlId='formCorreo'>
-              <Form.Label>Correo electrónico</Form.Label>
-              <Form.Control type="email" placeholder="Ingresa tu correo electrónico" />
-          </Form.Group>
-
-          <Form.Group className='mb-3' controlId='formMensaje'>
-              <Form.Label>Mensaje</Form.Label>
-              <Form.Control as="textarea" rows={3} placeholder="Escribe tu mensaje" />
-          </Form.Group>
-          
-        </Form>
+      <Seccion id="contacto" titulo="Contacto">
+      <Contacto />   
       </Seccion>
 
       </main> 
