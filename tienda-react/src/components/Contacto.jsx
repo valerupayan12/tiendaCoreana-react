@@ -1,6 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+
 function Contacto() {
   return (
     <div>
@@ -21,6 +22,9 @@ function Contacto() {
               <Form.Label>Mensaje</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Escribe tu mensaje" />
           </Form.Group>
+            
+          <Button variant="pink" type="submit" className='me-2'> Enviar mensaje </Button>
+          <Button variant="pink" type="reset"> Limpiar formulario </Button>
           
         </Form>
     </div>
