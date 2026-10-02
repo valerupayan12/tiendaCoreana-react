@@ -27,7 +27,7 @@ function TarjetaProducto({ nombre, imagen, precio }) {
                     borderRadius: '4px',
                 }}
             >
-               {meGusta? 'Quitar ' : 'Agregar'}
+               {meGusta? '🥀Quitar ' : '🌸Agregar'}
             </button>
         </article>
     );
