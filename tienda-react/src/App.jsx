@@ -48,9 +48,11 @@ import Contacto from './components/Contacto';
       <p>Los mejores productos de corea estan aqui.</p>
       <p>Puedes encontrar todo lo que necesites!.</p>
       </Seccion>
+      
       <Seccion id="album" titulo="Nuestros Productos Estrella">
 				<GaleriaProductos productos={productos}/>
 			</Seccion>
+
       <Seccion id="contacto" titulo="Contacto">
       <Contacto />   
       </Seccion>
