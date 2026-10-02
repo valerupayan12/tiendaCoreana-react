@@ -10,8 +10,6 @@ const lipTatto = '/img/liptatto.jpg' //IMAGEN DE LA BASE DE MAQUILLAJE 2AN
 import Seccion from './Seccion' //IMPORTAMOS EL COMPONENTE SECCION PARA USARLO EN EL APP
 import Footer from './components/Footer'; //IMPORTAMOS EL COMPONENTE FOOTER PARA USARLO EN EL APP
 import Header from './components/Header'; //IMPORTAMOS EL COMPONENTE HEADER PARA USARLO EN EL APP
-import Form from 'react-bootstrap/Form'; //IMPORTAMOS EL COMPONENTE FORM DE REACT-BOOTSTRAP PARA USARLO EN EL APP
-import Button from 'react-bootstrap/Button'; //IMPORTAMOS EL COMPONENTE BUTTON DE REACT-BOOTSTRAP PARA USARLO EN EL APP
 import 'bootstrap/dist/css/bootstrap.min.css'; //IMPORTAMOS EL CSS DE BOOTSTRAP PARA USARLO EN EL APP
 import Contacto from './components/Contacto';
 
@@ -28,11 +26,11 @@ import Contacto from './components/Contacto';
 
   // LISTA DE PRODUCTOS
   const productos = [
-    { id: 1, nombre: 'Base de maquillaje 2aN', precio: 15990, imagen: imagenBase },
-    { id: 2, nombre: 'Rosy Mucha', precio: 12490, imagen: rosyMucha },
-    { id: 3, nombre: 'Protector solar', precio: 18990, imagen: protectorSolar },
-    { id: 4, nombre: 'TOCOBO', precio: 21000, imagen: tocobo },
-    { id: 5, nombre: 'Lip tattoo', precio: 9990, imagen: lipTatto }
+    { id: 1, nombre: 'Base de maquillaje 2aN', precio: 15990, descripcion: 'Base de maquillaje de alta calidad', imagen: imagenBase },
+    { id: 2, nombre: 'Rosy Mucha', precio: 12490, descripcion: 'Paleta de sombras rosadas', imagen: rosyMucha },
+    { id: 3, nombre: 'Protector solar', precio: 18990, descripcion: 'Protector solar con factor de protección SPF50', imagen: protectorSolar },
+    { id: 4, nombre: 'TOCOBO', precio: 21000, descripcion: 'Lápiz labial de alta durabilidad', imagen: tocobo },
+    { id: 5, nombre: 'Lip tattoo', precio: 9990, descripcion: 'Tatuaje de labios permanente', imagen: lipTatto }
   ];
 
   

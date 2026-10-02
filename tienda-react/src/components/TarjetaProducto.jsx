@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-function TarjetaProducto({ nombre, imagen, precio }) { 
+function TarjetaProducto({ nombre, imagen, precio, descripcion }) { 
     const[meGusta,setMeGusta] = useState(false);
 
     const alternar=()=>{
@@ -18,6 +18,7 @@ function TarjetaProducto({ nombre, imagen, precio }) {
             </div>
             <h3>{nombre}</h3>
             <p className="precio">${precio}</p>
+            <p className="descripcion">{descripcion}</p>
             <button
                 onClick={alternar}
                 style={{
