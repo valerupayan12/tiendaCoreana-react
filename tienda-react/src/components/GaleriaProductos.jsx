@@ -1,11 +1,11 @@
-import TarjetaProducto from './TarjetaProducto'; // 👈 Asegúrate de que esta línea exista arriba de todo
+import TarjetaProducto from './TarjetaProducto'; 
 
 function GaleriaProductos({productos}) {
   return (
     <div className="galeria">
         {productos.map(producto => (
             <TarjetaProducto 
-                key={producto.id} // <-- Añade esta línea aquí
+                key={producto.id} 
                 id={producto.id}
                 nombre={producto.nombre}
                 imagen={producto.imagen}
