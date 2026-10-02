@@ -9,6 +9,7 @@ function GaleriaProductos({productos}) {
                 id={producto.id}
                 nombre={producto.nombre}
                 imagen={producto.imagen}
+                descripcion={producto.descripcion}
                 precio={producto.precio}
             />
         ))}
