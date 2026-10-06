@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Header({ titulo, subtitulo, descripcion, itemsMenu = [] }) {
 	return (
 		<>
@@ -10,8 +12,8 @@ function Header({ titulo, subtitulo, descripcion, itemsMenu = [] }) {
 					<ul>
 						<li><a href="#inicio">Inicio</a></li>
 						<li><a href="#album">Álbum</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-						<li><a href="index2.html">Productos</a></li>
+						<li><a href="/#contacto">Contacto</a></li>
+						<li><Link to="/productos">Productos</Link></li>
 					</ul>
 				</nav>
 			</header>

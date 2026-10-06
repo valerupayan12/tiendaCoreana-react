@@ -1,13 +1,15 @@
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import './App.css' //IMPORTAMOS EL ARCHIVO CSS PARA ESTILOS
 import Home from './views/Home.jsx' //IMPORTAMOS EL COMPONENTE HOME
+import Productos from './views/Productos.jsx'
 
-
-  function App() {
+function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/productos' element={<Productos />} />
+      <Route path='*' element={<Navigate to='/' replace />} />
     </Routes>
   )
 }
