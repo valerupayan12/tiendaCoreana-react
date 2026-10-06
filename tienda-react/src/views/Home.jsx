@@ -8,8 +8,9 @@ import Header from '../components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Contacto from '../components/Contacto'
 
+
 function Home() {
-  // rutas de imágenes en public/img
+  
   const imagenBase = '/img/2aN_BASE.jpg'
   const rosyMucha = '/img/2-rosy-mucha.jpg'
   const protectorSolar = '/img/protectorSolas.jpeg'
